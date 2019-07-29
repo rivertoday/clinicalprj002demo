@@ -60,7 +60,7 @@ router.post('/',function (req, res, next) {
 
 })
 
-router.get('*', (req, res) => {
+router.get('/', (req, res) => {
   res.status(200).end(html)
 })
 

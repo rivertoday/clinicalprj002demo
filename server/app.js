@@ -18,6 +18,7 @@ app.use(cookieParser());
 app.use('/user',user)
 app.use('/login',login)
 app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use('/',login)
 app.listen(3000, () => {
     console.log('app listening on port 3000.')
 })
